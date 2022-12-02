@@ -4,15 +4,15 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)](https://github.com/psf/black)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow?style=flat-square)](https://conventionalcommits.org)
 
-## Development
-### Install dependencies
+## Desarrollo
+### Instalación de dependencias
 ```sh
-# Install all dependencies
+# Instalación de todo
 poetry install
 
-# Install linters and checks (Unlinted PRs won't be approved)
+# Instalación linters (no se aprobarán PR sin linter)
 poetry run pre-commit install
 
-# Install commit-msg linters (PRs with wrong commit names will be squashed)
+# Instalar linters de commit-msg (Los PR con nombres de confirmación incorrectos serán eliminados)
 poetry run pre-commit install --hook-type commit-msg
 ```
